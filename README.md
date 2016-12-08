@@ -1,2 +1,2 @@
 # neci-python
-Aqui fica a segunda parte do curso de python dado no NECI
+Curso de python dado no NECI em 2016
