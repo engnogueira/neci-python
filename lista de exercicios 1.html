@@ -1,0 +1,46 @@
+<p>Usando o conceito de função vamos assumir para nossos exercícios que existem as seguintes funções conhecidas:</p>
+<ul>
+<li>
+<p>leiaArquivo(nome_do_arquivo) : </p>
+<ul>
+<li>abre o arquivo, lê seu texto e fecha o arquivo</li>
+<li>retorna o texto lido como um string</li>
+</ul>
+</li>
+<li>
+<p>leiaHTML(url_dada):</p>
+<ul>
+<li>acessa a url dada e baixa uma página html</li>
+<li>retorna a pagina <strong>HTML</strong> lida (não é o texto)</li>
+</ul>
+</li>
+<li>
+<p>input() : </p>
+<ul>
+<li>lê input do usuário via teclado</li>
+<li>retorna um string com as teclas digitadas pelo usuário</li>
+</ul>
+</li>
+<li>
+<p>print(texto):</p>
+<ul>
+<li>escreve  texto no display</li>
+</ul>
+</li>
+<li>
+<p>escreveArquivo(nome, texto):</p>
+<ul>
+<li>abre o arquivo nome, escreve nele o texto e fecha o arquivo</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<p>Nos problemas o objetivo é exercitar análise do problema a construção de procedimentos para sua solução. Use pseudo código e crie funções quando achar conveniente. Onde for necessário assuma uma função adequada, mesmo que não a tenha definido. Por exemplo, se você leu uma página da internet e quer obter o texto correspondente (não somente o HTML) assuma uma função adequada:</p>
+<p><code>html = leiaHTML(url)</code></p>
+<p><code>texto = ConverteHTML(html)   # ConverteHTML() é uma função presumida</code></p>
+<hr/>
+<p>Nos problemas abaixo use a função <code>input()</code> quando for necessário ler algum dado fornecido pelo usuário.</p>
+<p><em>ex 1: Leia um número (use a função input). Calcule a soma dos quadrados de todos numeros inteiros de 1 até o numero lido. Imprima esta soma.</em></p>
+<p><em>ex 2: Leia o nome de um arquivo. Leia o arquivo e procure ocorrências do caracter '@', contando-as. Imprima o valor da contagem.</em> </p>
+<p><em>ex 3: Dado um diretório contendo arquivos de diversos tipos conte o número de arquivos texto (.txt) e arquivos CSV (.csv). Imprima estas contagens</em></p>
+<p><em>ex 4: (avançado)  Leia um string entrado pelo usuário e procure sub strings formados por letras 'a' consecutivas. Por exemplo sub strings  como 'a', 'aa', 'aaa', e assim por diante. Conte o tamanho de cada sub string e imprima o tamanho do maior deles.</em></p>

@@ -1,0 +1,33 @@
+<h1>Lista de exercícios 2</h1>
+<p>O objetivo destes exercícios usando pseudo código é o aprendizado de heuristicas e a prática de criar procedimentos para resolver problemas. Alguns exercícios podem parecer muito distantes da experiência cotidiana, mas fazendo-os você vai adquirindo prática valiosa na criação de procedimentos. </p>
+<p>Para estes exercícios pode ser útil relembrar listas. Listas podem ter outras listas concatenadas ao seu final (posição de maior índice) usando o operador '+'. Por exemplo:</p>
+<p><code>lst = [1, 5, 2, 9] + [10]                            # lst == [1, 5, 2, 9, 10]</code></p>
+<p>Portanto para adicionar um dado objeto (numero) numa lista basta coloca-lo entre chaves quadradas e usar o operador '+'.</p>
+<p>Podemos tambem usar o comando enquanto ao processar itens sem ter limite de repetições. Por exemplo:</p>
+<p>Leia números digitados até entrar uma letra. Para cada número imprima &quot;é primo&quot; se for um numero primo. Imprima &quot;Feito.&quot; quando for digitada uma letra.</p>
+<p>Vejamos como proceder. Assuma que temos uma função letra(L) que retorna &quot;verdadeiro&quot; se L for letra e &quot;falso&quot; caso contrario. </p>
+<p>Assuma ainda uma função <code>numero_primo(N)</code> que retorna &quot;verdadeiro&quot; se N for numero primo e &quot;falso&quot; caso contrario. Então poderia ser assim:</p>
+<pre><code>n = input()                        # lê entrada via teclado na variável n
+
+enquanto não for letra(n):
+
+   se numero_primo(n):
+
+           imprime(&quot;é primo&quot;)
+
+   n = input()                         # le entrada seguinte 
+
+</code></pre>
+
+<p>Dito isto, vejamos os exercícios.</p>
+<p><code>ex 2.1: Leia números digitados pelo usuário até êle digitar uma letra. Imprima os mesmos números mas em ordem reversa de sua entrada.</code></p>
+<p>Para o exercício seguinte assuma que existe uma função <code>separador(L)</code> que recebe um caracter L qualquer e retorna  &quot;verdadeiro&quot; se L for pontuação ou whitespace e &quot;falso&quot; caso contrario. Lembre que whitespace é o conjunto que inclui espaço em branco, tabulação, etc.</p>
+<p><code>ex 2.2: Leia um arquivo dado e percorra seu texto contando o numero de palavras. Imprima esta contagem.</code></p>
+<p>Vejamos alguns exercícios com strings.</p>
+<p><code>ex 2.3: Leia um string de digitos dado pelo usuario. Imprima uma lista das letras do string sem repetição de letras.</code></p>
+<p><code>ex 2.4: Adapte o procedimento de ex 2.3 para ser uma função que recebe um string e devolve a lista de caracteres sem repetição.</code></p>
+<p>O exercíco seguinte usa a função definida em ex 2.4. Recordemos o conceito de conjunto: um conjunto A é uma coleção de elementos sem repetição. Podemos simular este conceito (só parcialmente, veremos futuramente implementações completas) usando listas onde nenhum elemento é repetido. Os elementos da lista representarão elementos do conjunto.</p>
+<p><code>ex 2.5: Leia dois strings dados pelo usuário (leia um string e depois leia o outro string). Imprima &quot;conjuntos iguais&quot; se os strings contem as mesmas letras, ignorando repetição. Imprima &quot;conjuntos diferentes&quot; se um dos strings tem letra(s) que não ocorre no outro.</code></p>
+<p>Para o proximo exercicio vamos relembrar o conceito de subconjunto: um conjunto A é dito ser subconjunto de um conjunto B se e somente se cada elemento do conjunto A também é um elemento do conjunto B. </p>
+<p><code>ex 2.6: Leia um string dado pelo usuário. Chame-o de A. Leia outro string dado pelo usuário e chame-o de B. Usando as idéias do exercicio ex 2.5 imprima &quot;A é subconjunto de B&quot; caso isto seja verdadeiro, ou vice-versa.</code></p>
+<p>Por hoje é só isto. Outros virão depois.</p>
